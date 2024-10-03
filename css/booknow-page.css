@@ -1,0 +1,167 @@
+.book-now-wrapper h1 {
+    font-size: 3rem;
+    font-family: var(--bold);
+}
+
+.book-now-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+.book-now-wrapper p {
+    font-size: 1.2rem;
+    font-family: var(--regular);
+    text-align: justify;
+    
+}
+
+.book-now-wrapper .lead{
+    font-size: 1.8rem;
+    font-family: var(--medium);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .book-now-wrapper h1 {
+        font-size: 2rem; /* Adjust font size for tablets */
+    }
+
+    .book-now-wrapper p {
+        font-size: 1rem;
+        font-family: var(--regular);
+    }
+}
+
+@media (max-width: 576px) {
+    .book-now-wrapper h1 {
+        font-size: 1.8rem; /* Adjust font size for mobile */
+    }
+
+    .book-now-wrapper p {
+        font-size: 0.9rem;
+    }
+
+    .book-now-wrapper img {
+        max-width: 80%; /* Slightly smaller image on mobile */
+    }
+}
+
+
+.booking-form-wrapper h2 {
+    font-size: 2.2rem;
+}
+
+@media (max-width: 768px) {
+    .booking-form-wrapper h2 {
+        font-size: 2rem;
+    }
+    .booking-form-wrapper p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .booking-form-wrapper h2 {
+        font-size: 1.8rem;
+    }
+    .booking-form-wrapper p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 444px) {
+    .booking-form-wrapperc .lead  {
+        font-size: 1.2rem;
+    }
+  
+}
+
+
+
+
+/* booking form */
+
+.booking-form-wrapper {
+    position: relative; /* Needed for absolute positioning of the overlay */
+    width: 100%;
+    margin: auto;
+    padding: 20px; /* Add padding for better spacing */
+    background-image: url('../images/map.png');
+    background-size: cover;
+    overflow: hidden; /* Ensures the overlay doesn't affect layout */
+  }
+  
+  .booking-form-wrapper::before {
+    content: ""; /* Necessary for the pseudo-element to display */
+    position: absolute; /* Positioning relative to the wrapper */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);/* Black color with 50% opacity */
+    z-index: 1; /* Ensure it's above the background image but below the content */
+  }
+  
+  .card-form-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px;
+    padding: 22px;
+    border-radius: 10px;
+    background: white; /* Background for the form card */
+    margin: 0 auto;
+    position: relative; /* Ensure the form card is above the overlay */
+    z-index: 2; /* Higher z-index than the overlay */
+  }
+  
+  /* Input focus color */
+  .form-control:focus {
+    border-color: #ff6600; 
+    background-color: #f8f9fa; /* Optional: light background on focus */
+    box-shadow: none !important;
+  }
+  
+  /* Button color */
+  .btn-success {
+    background-color:#ff6600 !important; 
+    border-color: #ff6600 !important; 
+  }
+  
+  .btn-success:hover {
+    background-color:var(--orange);  /* Darker green on hover */
+    border-color: var(--orange); /* Darker border on hover */
+  }
+  
+  .btn-success:focus {
+    box-shadow: none !important;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .taxi-booking-wrapper {
+        padding: 10px; /* Mobile padding */
+    }
+  }
+
+  .booking-form-wrapper p{
+    font-size: 1rem;
+    font-family: var(--regular);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .sub__header {
+        display: none;
+    }
+}
+
+.btn-taxi {
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 30px 30px 30px 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: pulse 2s infinite;
+    width: 50%;
+}

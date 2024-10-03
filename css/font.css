@@ -1,0 +1,24 @@
+@font-face {
+  font-family: rb-bold;
+  src: url(../fonts/bold.ttf);
+}
+@font-face {
+  font-family: rb-semibold;
+  src: url(../fonts/semibold.ttf);
+}
+@font-face {
+  font-family: rb-medium;
+  src: url(../fonts/medium.ttf);
+}
+@font-face {
+  font-family: rb-regular;
+  src: url(../fonts/regular.ttf);
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  src: url('../webfonts/fa-solid-900.woff2') format('woff2'),
+       url('../webfonts/fa-solid-900.woff') format('woff');
+}
+

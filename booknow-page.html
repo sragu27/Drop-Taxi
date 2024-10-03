@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontawesome js  -->
+    <script src="https://kit.fontawesome.com/01fbaf3a8e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/font.css" />
+
+     <!-- custom css -->
+     <link rel="stylesheet" href="./css/common.css" />
+     <link rel="stylesheet" href="./css/booknow-page.css">
+</head>
+<body>
+         <!-- sub header -->
+         <header class="sub__header" id="subHeader">
+          </header>
+          <!-- main header -->
+          <div class="main__header top__nav" id="mainHeader">  
+          </div>
+
+          <!-- body banner -->
+          
+
+          <section class="book-now-wrapper py-5 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 text-lg-left">
+                        <h1 class="display-4">Book Your Ride in Seconds</h1>
+                        <p class="lead mt-1">Seamless, Reliable, and Ready to Go</p>
+                        <p class="mt-3">Experience hassle-free booking, transparent pricing, and premium service—all at your fingertips.</p>
+                        <button class="btn btn-taxi mt-3" id="scrollToFormBtn">Get Started Now!</button>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <img src="./images/taxi-book24.png" class="img-fluid" alt="Taxi Booking">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="booking-form-wrapper py-5" id="bookingForm">
+            <div class="container">
+              <div class="card-form-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <h2 class="text-center mb-4">Start Your Journey Now</h2>
+                        <p class="text-center mb-5">Just a Few Steps Away from Your Ride!</p>
+                        
+                        <form id="bookingForm" class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6 col-md-12">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-12">
+                                    <label for="mobile">Mobile</label>
+                                    <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number" required pattern="\d{10}">
+                                    <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6 col-md-12">
+                                    <label for="pickup">Pickup Location</label>
+                                    <input type="text" class="form-control" id="pickup" placeholder="Enter pickup location" required>
+                                    <div class="invalid-feedback">Please enter your pickup location.</div>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-12">
+                                    <label for="drop">Drop Location</label>
+                                    <input type="text" class="form-control" id="drop" placeholder="Enter drop location" required>
+                                    <div class="invalid-feedback">Please enter your drop location.</div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6 col-md-12">
+                                    <label for="pickupDate">Pickup Date</label>
+                                    <input type="date" class="form-control" id="pickupDate" required>
+                                    <div class="invalid-feedback">Please select a pickup date.</div>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-12">
+                                    <label for="pickupTime">Pickup Time</label>
+                                    <div class="input-group">
+                                        <select class="form-control" id="pickupHour" required>
+                                            <option value="">Hour</option>
+                                            <!-- 1 to 12 for hours -->
+                                            <script>
+                                                for (let i = 1; i <= 12; i++) {
+                                                    document.write(`<option value="${i}">${i}</option>`);
+                                                }
+                                            </script>
+                                        </select>
+                                        <select class="form-control" id="pickupMinute" required>
+                                            <option value="">Minute</option>
+                                            <!-- 0 to 59 for minutes -->
+                                            <script>
+                                                for (let i = 0; i < 60; i += 5) { // 5-minute intervals
+                                                    document.write(`<option value="${i}">${i < 10 ? '0' + i : i}</option>`);
+                                                }
+                                            </script>
+                                        </select>
+                                        <select class="form-control" id="pickupAmPm" required>
+                                            <option value="">AM/PM</option>
+                                            <option value="AM">AM</option>
+                                            <option value="PM">PM</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select a pickup time.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-12 col-md-12">
+                                    <label for="seaterType">Seater Type</label>
+                                    <select class="form-control" id="seaterType" required>
+                                        <option value="">Select Seater Type</option>
+                                        <option value="2-seater">2 Seater</option>
+                                        <option value="4-seater">4 Seater</option>
+                                        <option value="6-seater">6 Seater</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a seater type.</div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <label for="driverNotes">Driver Notes</label>
+                                    <textarea class="form-control" id="driverNotes" placeholder="Any special instructions for the driver" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block my-5 py-3">Submit & Send to WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+
+
+
+        <!-- footer -->
+        <section class="taxi__footer__sec" id="taxiFooter"></section>
+
+ 
+            <!-- Jquery Js -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/header_footer.js"></script>
+
+    <script>
+        // navbar active
+        $(document).ready(function () {
+         $(".menu-items li a").on("click", function () {
+           $(".menu-items li a").removeClass("nav__active");
+           $(this).addClass("nav__active");
+         });
+       });
+     </script>
+ 
+ 
+ 
+ <script>
+   $(window).scroll(function() {
+       if ($(this).scrollTop() > 50) { // If scrolled more than 50px
+           $('.main__navbar').addClass('navScrolled'); // Add shadow class
+       } else {
+           $('.main__navbar').removeClass('navScrolled'); // Remove shadow class
+       }
+   });
+   </script>
+
+   <script>
+    $(document).ready(function(){
+    // When the button is clicked, smooth scroll to the form
+    $("#scrollToFormBtn").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#bookingForm").offset().top
+        }, 1000);  // 1000ms for smooth scrolling
+    });
+    });
+
+   </script>
+
+
+<!-- booking form -->
+
+<script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', handleSubmit, false);
+            });
+        }, false);
+  
+        function handleSubmit(event) {
+            var form = event.target;
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            } else {
+                event.preventDefault(); // Prevent default form submission
+  
+                // Collect form data
+                var name = document.getElementById('name').value;
+                var mobile = document.getElementById('mobile').value;
+                var pickup = document.getElementById('pickup').value;
+                var drop = document.getElementById('drop').value;
+  
+                // Get pickup time from custom time picker
+                var hour = document.getElementById('pickupHour').value;
+                var minute = document.getElementById('pickupMinute').value;
+                var ampm = document.getElementById('pickupAmPm').value;
+  
+                var formattedTime = `${hour}:${minute} ${ampm}`;
+  
+                // Format date as dd/mm/yyyy
+                var pickupDate = new Date(document.getElementById('pickupDate').value);
+                var formattedDate = ("0" + pickupDate.getDate()).slice(-2) + "/" + 
+                                    ("0" + (pickupDate.getMonth() + 1)).slice(-2) + "/" + 
+                                    pickupDate.getFullYear();
+  
+                var seaterType = document.getElementById('seaterType').value;
+                var driverNotes = document.getElementById('driverNotes').value;
+  
+                // Create message to send via WhatsApp
+                var whatsappNumber = "919791502059"; // Change this to the desired phone number
+                var message = `Booking Details:
+                Name: ${name}
+                Mobile: ${mobile}
+                Pickup: ${pickup}
+                Drop: ${drop}
+                Pickup Date: ${formattedDate}
+                Pickup Time: ${formattedTime}
+                Seater Type: ${seaterType}
+                Driver Notes: ${driverNotes}`;
+  
+                // Redirect to WhatsApp Web or App
+                var whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+  
+                // Optionally reset the form after sending
+                form.reset();
+                // Refresh the page after sending
+                location.reload();
+            }
+            form.classList.add('was-validated');
+        }
+    })();
+  </script>
+
+
+
+ 
+   
+    
+</body>
+</html>

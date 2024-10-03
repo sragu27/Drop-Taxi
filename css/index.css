@@ -1,0 +1,549 @@
+.body__wrapper {
+  padding: 20px 0; 
+}
+
+.banner__wrapper {
+  text-align: left; 
+}
+
+.ban__title {
+  color: #f39c12; 
+}
+
+.ban__title {
+  display: block;
+}
+.banner__item h5 {
+  font-size: 1.3rem;
+  font-family: var(--semibold);
+  color: var(--black);
+}
+
+.banner__item h1 {
+  font-size: 3.3rem;
+  font-family: var(--bold);
+  color: black;
+}
+
+.banner__item p {
+  font-size: 1rem;
+  font-family: var(--regular);
+  color: #5b5b5b;
+  margin-top: 16px;
+  text-align: justify;
+}
+.btn__wrapper{
+  margin-top: 30px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the bounce height */
+  }
+}
+
+.banner__item .img-fluid {
+  animation: bounce 2s ease-in-out infinite; /* 2s bounce, repeating infinitely */
+}
+
+/* Premium ride */
+.premium{
+  border-radius: 0px 0px 0px 90px;
+}
+.relax{
+  border-radius: 0px 0px 90px 0px;
+}
+.premium-row{
+  display: flex;
+}
+
+.premium-box h5{
+  font-family: var(--semibold);
+  color: #f39c12;
+}
+.premium-box h2{
+  font-family: var(--bold);
+  margin-top: 4px;
+}
+.premium-box p{
+font-family: var(--regular);
+color: #5b5b5b;
+margin-top: 12px;
+text-align: justify;
+}
+
+/* Why choose us */
+.whyChoose-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+  gap: 12px;
+}
+.why-choose-title h2{
+  font-family: var(--bold);
+  color: var(--black);
+}
+
+
+
+/* ----------Servinng area css---------------- */
+.serving-area-title{
+  font-family: var(--semibold);
+  color: black;
+  font-size: 22px;
+}
+/* Servinng area css */
+.serving-area-item {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.3s ease; /* Animation on transform and shadow */
+}
+
+/* Add hover effect */
+.serving-area-item:hover, 
+.serving-area-item:active {
+  transform: scale(1.1); /* Zoom effect */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a pop-out effect */
+}
+
+/* Apply background images to the correct items */
+.serving-area-list:nth-child(1) .serving-area-item {
+  background-image: url('../images/chennai-airport.png');
+}
+
+.serving-area-list:nth-child(2) .serving-area-item {
+  background-image: url('../images/chennai-central.png');
+}
+
+.serving-area-list:nth-child(3) .serving-area-item {
+  background-image: url('../images/vandalurzoo.png');
+}
+
+.serving-area-list:nth-child(4) .serving-area-item {
+  background-image: url('../images/chennai-marina.png');
+}
+
+.serving-area-list:nth-child(5) .serving-area-item {
+  background-image: url('../images/santhome-church.png');
+}
+
+.serving-area-list:nth-child(6) .serving-area-item {
+  background-image: url('../images/mylapore-kapaleeswarar-temple.png');
+}
+
+.overlay-serving {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease; /* Smooth transition for overlay */
+}
+
+/* Add overlay color change on hover */
+.serving-area-item:hover .overlay-serving, 
+.serving-area-item:active .overlay-serving {
+  background-color: rgba(0, 0, 0, 0.4); /* Lighten overlay on hover/touch */
+}
+
+/* Overlay text styling */
+.overlay-serving h3 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--semibold);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition to text */
+}
+
+/* Animate text (zoom effect) on hover */
+.serving-area-item:hover .overlay-serving h3,
+.serving-area-item:active .overlay-serving h3 {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+/* Blue banner styles */
+.blue-banner-wrapper {
+  background: #1a3761;
+}
+
+.blue-banner-item h3 {
+  font-size: 32px;
+  color: white;
+  font-family: var(--semibold);
+}
+
+.whatsapp-card {
+  background: var(--orange);
+  border-radius: 4px;
+}
+
+.whatsapp-card p {
+  font-family: var(--regular);
+  font-size: 16px;
+  color: var(--black);
+}
+
+.blue-banner-item button {
+  background: transparent;
+  border: 2px solid var(--orange);
+  text-align: center;
+  font-family: var(--regular);
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 6px 18px;
+  color: var(--orange);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blue-banner-item button:hover {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+
+/* Services css */
+
+.services__title h1{
+  font-family: var(--bold);
+}
+.services__title h5{
+  font-family: var(--semibold);
+  font-size: 22px;
+}
+
+.business{
+  background-image: url('../images/business.png');
+}
+.airport{
+  background-image: url('../images/airport.png');
+}
+.office{
+  background-image: url('../images/dailyoffice.png');
+}
+.wedding{
+  background-image: url('../images/wedding.png');
+}
+
+.service-box {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.service-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black overlay with opacity */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.service-box .overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.service-box .overlay p{
+  padding: 2px 10px;
+}
+
+.service-box .overlay button {
+  background-color: #ff6600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+}
+
+.service-box .overlay button:hover {
+  background-color: #f39c12;
+}
+
+/* booking form */
+
+.taxi-booking-wrapper {
+  position: relative; /* Needed for absolute positioning of the overlay */
+  width: 100%;
+  margin: auto;
+  padding: 20px; /* Add padding for better spacing */
+  background-image: url('../images/map.png');
+  background-size: cover;
+  overflow: hidden; /* Ensures the overlay doesn't affect layout */
+}
+
+.taxi-booking-wrapper::before {
+  content: ""; /* Necessary for the pseudo-element to display */
+  position: absolute; /* Positioning relative to the wrapper */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);/* Black color with 50% opacity */
+  z-index: 1; /* Ensure it's above the background image but below the content */
+}
+
+.card-form-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px;
+  padding: 22px;
+  border-radius: 10px;
+  background: white; /* Background for the form card */
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative; /* Ensure the form card is above the overlay */
+  z-index: 2; /* Higher z-index than the overlay */
+}
+
+/* Input focus color */
+.form-control:focus {
+  border-color: #ff6600; 
+  background-color: #f8f9fa; /* Optional: light background on focus */
+  box-shadow: none !important;
+}
+
+/* Button color */
+.btn-success {
+  background-color:#ff6600 !important; 
+  border-color: #ff6600 !important; 
+}
+
+.btn-success:hover {
+  background-color:var(--orange);  /* Darker green on hover */
+  border-color: var(--orange); /* Darker border on hover */
+}
+
+.btn-success:focus {
+  box-shadow: none !important;
+}
+
+
+
+
+.jouney-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: -16px;
+  transform: translateX(30%);
+  z-index: 1;
+  /* right: 20%; */
+}
+
+.journey-banner {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px;
+  padding: 18px 22px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.taxi__footer__sec {
+  position: relative;
+  margin-top: 90px;
+}
+
+.journey-banner h4 {
+  font-family: var(--semibold);
+  color: var(--black);
+}
+
+.journey-banner .btn__bookNow {
+  background-color: #ff6600;
+  padding: 12px 28px;
+  border-radius: 6px;
+  color: var(--white);
+  font-family: var(--semibold);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.journey-banner .btn__bookNow:hover {
+  background-color: #ff8533;  /* Lighter shade on hover */
+  transform: scale(1.05);  /* Slightly enlarge on hover */
+  cursor: pointer;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .serving-area-item {
+    height: 250px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .serving-area-item {
+    height: 200px; 
+  }
+  .taxi-booking-wrapper {
+    padding: 10px; /* Mobile padding */
+  }
+  .sub__header {
+    display: none;
+  }
+  .blue-banner-item h3 {
+    font-size: 24px;
+  }
+  
+  .whatsapp-card p {
+    font-size: 14px;
+  }
+  .banner-box{
+    flex-direction: column-reverse;
+  }
+  .jouney-wrapper {
+    width: 80%;
+    margin-top: -20px;
+    transform: translateX(15%);
+    z-index: 1;
+    
+}
+}
+
+
+@media (max-width: 576px) {
+  .serving-area-item {
+    height: 150px; 
+  }
+  .blue-banner-item h3 {
+    font-size: 20px;
+  }
+  
+  .whatsapp-card p {
+    font-size: 12px;
+  }
+
+  .blue-banner-item button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .whyChoose-card img {
+    width: 60px; /* Adjust icon size for smaller screens */
+  }
+}
+
+@media (max-width: 574px) {
+  .premium {
+    border-radius:10px;
+}
+.relax {
+  border-radius:10px;
+}
+.btn__wrapper{
+  text-align: center;
+}
+.btn-taxi {
+    width: 90%;
+    margin: 0 auto;
+}
+}
+
+@media (max-width: 531px) {
+  .banner__item h1 {
+    font-size: 2.8rem;
+}
+  
+}
+
+@media (max-width: 426px) {
+.banner__item{
+  text-align: justify;
+}
+.banner__item h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+  .btn-taxi {
+    width: 100%;
+}
+.jouney-wrapper {
+  margin-top: -22px;
+
+}
+.journey-banner h4 {
+  font-size: 18px;
+}
+.journey-row{
+  margin: 10px;
+}
+}
+
+@media (max-width: 408px) {
+  .jouney-wrapper {
+    margin-top: -50px !important;
+}
+}
+
+@media (max-width: 375px) {
+  .jouney-wrapper {
+    margin-top: -50px;
+}
+}
+
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 767px) {
+  .service-box {
+    height: 250px;
+  }
+
+  .service-box .overlay h3 {
+    font-size: 1.25rem;
+  }
+  .jouney-wrapper {
+    width: 100%;
+    margin-top: -22px;
+    transform: translateX(0%);
+    z-index: 1;
+}
+.premium-row{
+  flex-direction: column-reverse;
+}
+
+}
+
+@media (max-width: 320px) {
+  .banner__item h1 {
+    font-size: 1.5rem;
+}
+.banner__item h5 {
+  font-size: 1rem;
+}
+}
+
+
