@@ -338,10 +338,10 @@ button {
 }
 .ft__menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 7%;
+  /* gap: 7%; */
 }
 .ft__menu li a {
   font: 1rem var(--regular);

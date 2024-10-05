@@ -10,8 +10,6 @@ var footer = `<footer class="taxi-footer">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Services</a></li>
                   <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Comming soon</a></li>
-                  <li><a href="#">Comming soon</a></li>
                 </ul>
               </div>
 
@@ -47,7 +45,7 @@ var footer = `<footer class="taxi-footer">
                 <div class="ft__cpy__item">
                   <p>
                     Copyright &copy; 2022, All Right Reserved
-                    <a href="#">Ragu</a>
+                    <a href="#">bookmysavari</a>
                   </p>
                 </div>
               </div>
