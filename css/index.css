@@ -118,27 +118,27 @@ text-align: justify;
 
 /* Apply background images to the correct items */
 .serving-area-list:nth-child(1) .serving-area-item {
-  background-image: url('../images/chennai-airport.png');
-}
-
-.serving-area-list:nth-child(2) .serving-area-item {
   background-image: url('../images/chennai-central.png');
 }
 
+.serving-area-list:nth-child(2) .serving-area-item {
+  background-image: url('../images/isha-coimbatore.png');
+}
+
 .serving-area-list:nth-child(3) .serving-area-item {
-  background-image: url('../images/vandalurzoo.png');
+  background-image: url('../images/trichy.png');
 }
 
 .serving-area-list:nth-child(4) .serving-area-item {
-  background-image: url('../images/chennai-marina.png');
+  background-image: url('../images/rameshwaram.png');
 }
 
 .serving-area-list:nth-child(5) .serving-area-item {
-  background-image: url('../images/santhome-church.png');
+  background-image: url('../images/kanyakumari.png');
 }
 
 .serving-area-list:nth-child(6) .serving-area-item {
-  background-image: url('../images/mylapore-kapaleeswarar-temple.png');
+  background-image: url('../images/madurai-meenakshi.png');
 }
 
 .overlay-serving {

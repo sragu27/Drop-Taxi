@@ -77,6 +77,20 @@
   
 }
 
+@media (max-width: 426px) {
+.book-now-wrapper .lead {
+    font-size: 1.2rem;
+}
+.bkn-banner{
+    flex-direction: column-reverse;
+}
+.book-now-wrapper .display-4{
+    margin-top: 16px;
+}
+.book-now-wrapper .btn-taxi {
+    width: 100%;
+}
+}
 
 
 
