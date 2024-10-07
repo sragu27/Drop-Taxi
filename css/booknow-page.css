@@ -101,7 +101,7 @@
     width: 100%;
     margin: auto;
     padding: 20px; /* Add padding for better spacing */
-    background-image: url('../images/map.png');
+    background-image: url('../images/map.webp');
     background-size: cover;
     overflow: hidden; /* Ensures the overlay doesn't affect layout */
   }

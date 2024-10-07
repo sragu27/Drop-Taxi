@@ -118,27 +118,27 @@ text-align: justify;
 
 /* Apply background images to the correct items */
 .serving-area-list:nth-child(1) .serving-area-item {
-  background-image: url('../images/chennai-central.png');
+  background-image: url('../images/chennai-central.webp');
 }
 
 .serving-area-list:nth-child(2) .serving-area-item {
-  background-image: url('../images/isha-coimbatore.png');
+  background-image: url('../images/isha-coimbatore.webp');
 }
 
 .serving-area-list:nth-child(3) .serving-area-item {
-  background-image: url('../images/trichy.png');
+  background-image: url('../images/trichy.webp');
 }
 
 .serving-area-list:nth-child(4) .serving-area-item {
-  background-image: url('../images/rameshwaram.png');
+  background-image: url('../images/rameshwaram.webp');
 }
 
 .serving-area-list:nth-child(5) .serving-area-item {
-  background-image: url('../images/kanyakumari.png');
+  background-image: url('../images/kanyakumari.webp');
 }
 
 .serving-area-list:nth-child(6) .serving-area-item {
-  background-image: url('../images/madurai-meenakshi.png');
+  background-image: url('../images/madurai-meenakshi.webp');
 }
 
 .overlay-serving {
@@ -231,16 +231,16 @@ text-align: justify;
 }
 
 .business{
-  background-image: url('../images/business.png');
+  background-image: url('../images/business.webp');
 }
 .airport{
-  background-image: url('../images/airport.png');
+  background-image: url('../images/airport.webp');
 }
 .office{
-  background-image: url('../images/dailyoffice.png');
+  background-image: url('../images/dailyoffice.webp');
 }
 .wedding{
-  background-image: url('../images/wedding.png');
+  background-image: url('../images/wedding.webp');
 }
 
 .service-box {
@@ -300,7 +300,7 @@ text-align: justify;
   width: 100%;
   margin: auto;
   padding: 20px; /* Add padding for better spacing */
-  background-image: url('../images/map.png');
+  background-image: url('../images/map.webp');
   background-size: cover;
   overflow: hidden; /* Ensures the overlay doesn't affect layout */
 }
