@@ -9,7 +9,9 @@ var footer = `<footer class="taxi-footer">
                 <ul class="ft__menu">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Services</a></li>
-                  <li><a href="#">Pricing</a></li>
+                   <li><a href="#">Pricing</a></li>
+                   <li><a href="#"> Terms &amp; Condition</a></li>
+                  <li><a href="#"> Privacy Policy</a></li>
                 </ul>
               </div>
 
@@ -37,15 +39,16 @@ var footer = `<footer class="taxi-footer">
               <div class="ft__c_right">
                 <div class="ft__cpy__item">
                   <ul class="ft__cpy__menu">
-                    <li><a href="#"> Terms &amp; Condition</a></li>
-                    <li><a href="#"> Privacy Policy</a></li>
-                    <li><a href="#">Legal</a></li>
+                    <li><a href="tel:+919940708777"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61566047466791"><i class="fa-brands fa-facebook ic_social"></i></a></li>
+                    <li><a href="https://www.instagram.com/book_my_savaari_bms?utm_source=qr&igsh=MXQ5MnpubWZ6YmIzZw=="> <i class="fa-brands fa-instagram ic_social"></i></a></li>
+                    <li><a href="https://x.com/i/verified-get-verified"><i class="fa-brands fa-square-twitter ic_social"></i></a></li>
                   </ul>
                 </div>
                 <div class="ft__cpy__item">
                   <p>
-                    Copyright &copy; 2022, All Right Reserved
-                    <a href="#">bookmysavari</a>
+                    Copyright &copy; 2024, All Right Reserved
+                    <a href="bookmysavaari.com">bookmysavaari.com</a>
                   </p>
                 </div>
               </div>
@@ -78,7 +81,7 @@ var smallHeader = `<div class="sub__navbar">
                 <li class="contact__list">
                   <div class="contact__item">
                     <i class="fa-regular fa-envelope ic_social"></i>
-                    <h5>info@taxi@.com</h5>
+                    <h5>Bookmysavaaribms@gmail.com</h5>
                   </div>
                 </li>
               </ul>
@@ -86,16 +89,13 @@ var smallHeader = `<div class="sub__navbar">
             <div class="sub__nav__list">
               <ul class="social__media">
                 <li class="social__media__item">
-                  <i class="fa-brands fa-facebook ic_social"></i>
+                 <a href="https://www.facebook.com/profile.php?id=61566047466791"> <i class="fa-brands fa-facebook ic_social"></i></a>
                 </li>
                 <li class="social__media__item">
-                  <i class="fa-brands fa-square-twitter ic_social"></i>
+                 <a href="https://x.com/i/verified-get-verified"> <i class="fa-brands fa-square-twitter ic_social"></i></a>
                 </li>
                 <li class="social__media__item">
-                  <i class="fa-brands fa-instagram ic_social"></i>
-                </li>
-                <li class="social__media__item">
-                  <i class="fa-brands fa-linkedin-in ic_social"></i>
+                 <a href="https://www.instagram.com/book_my_savaari_bms?utm_source=qr&igsh=MXQ5MnpubWZ6YmIzZw=="> <i class="fa-brands fa-instagram ic_social"></i></a>
                 </li>
               </ul>
             </div>
@@ -120,7 +120,7 @@ var header = `<nav class="main__navbar">
             <li><a href="#">Services</a></li>
             <li><a href="#">Pricing</a></li>
           </ul>
-           <a href="index.html"><h1 class="logo">Taxi</h1></a>
+           <a href="index.html"><h1 class="logo">BookMySavaari</h1></a>
         </div>
       </nav>`;
 $("#mainHeader").html(header);
