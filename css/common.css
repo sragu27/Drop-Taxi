@@ -109,6 +109,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .sub__header {
+    display: none;
+  }
   .main__navbar {
     opacity: 0.95;
   }

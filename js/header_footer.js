@@ -1,17 +1,17 @@
 var footer = `<footer class="taxi-footer">
         <div class="custom__container">
-          <div class="taxi__footer__row">
+          <div class="taxi__footer__row pt-4">
             <div class="taxi__footer__logo">
               <h1>Taxi</h1>
             </div>
             <div class="ft__row">
               <div class="ft__item ft__left">
                 <ul class="ft__menu">
-                  <li><a href="#">About</a></li>
+                  <li><a href="about.html">About</a></li>
                   <li><a href="#">Services</a></li>
                    <li><a href="#">Pricing</a></li>
-                   <li><a href="#"> Terms &amp; Condition</a></li>
-                  <li><a href="#"> Privacy Policy</a></li>
+                   <li><a href="terms-condition.html"> Terms &amp; Condition</a></li>
+                  <li><a href="privacy-policy.html"> Privacy Policy</a></li>
                 </ul>
               </div>
 
@@ -115,8 +115,8 @@ var header = `<nav class="main__navbar">
           </div>
           <ul class="menu-items">
             <li><a class="nav__active" href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Pricing</a></li>
           </ul>

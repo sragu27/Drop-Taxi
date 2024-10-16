@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+     <!-- fontawesome js  -->
+     <script src="https://kit.fontawesome.com/01fbaf3a8e.js" crossorigin="anonymous"></script>
+ 
+     <link rel="stylesheet" href="./css/font.css" />
+ 
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/common.css" />
+      <link rel="stylesheet" href="./css/terms-condition.css">
+</head>
+<body>
+
+     <!-- sub header -->
+     <header class="sub__header" id="subHeader"></header>
+     <!-- main header -->
+     <div class="main__header top__nav" id="mainHeader"></div>
+
+
+     <section class="terms-wrapper py-5 mt-5">
+        <div class="container">
+            <!-- Terms Heading -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="terms-heading mt-4">
+                      <h2>Terms and Conditions</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Terms Content -->
+            <div class="row">
+                <div class="col-12">
+                    <h4>1. General</h4>
+                    <p>These terms and conditions govern the use of bookmysavaari.com, including the services offered through bookmysavaari.</p>
+                    <p>1.1 By making a booking with bookmysavaari, it is deemed that you have accepted these terms.</p>
+                    
+                    <h4>2. You Agree</h4>
+                    <p>2.1 All the information you have provided to us prior to, during, or after our service is correct and accurate.</p>
+                    <p>2.2 To treat all our drivers with respect, and not cause damage to their vehicle or engage in unlawful behavior. Any damage caused will result in charges.</p>
+                    <p>2.3 Not to possess any illegal or hazardous material during your participation in our services.</p>
+    
+                    <h4>3. Cancellation</h4>
+                    <p>3.1 If you wish to cancel your ride, please inform us at least 24 hours in advance.</p>
+                    <p>3.2 Cancellations due to emergencies before the ride start will not incur any charges.</p>
+                    <p>3.3 If the driver arrives and you cancel, a cancellation fee will be applied.</p>
+    
+                    <h4>4. Extra Charges</h4>
+                    <p>There are no hidden charges. All charges are per vehicle based on the booking information provided.</p>
+                    
+                    <h4>5. Limitation of Liability</h4>
+                    <p>BookMySavaari is not liable for delays due to unforeseen circumstances like traffic or weather.</p>
+    
+                    <h4>6. Payment Terms</h4>
+                    <p>Payments can be made through methods provided at booking. Refunds, if applicable, will be processed within 5-7 business days.</p>
+    
+                    <h4>7. Privacy and Data</h4>
+                    <p>Your personal data is used solely for service provision and will not be shared without your consent, unless required by law.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+
+
+
+
+
+
+
+ <!-- footer -->
+ <section class="taxi__footer__sec" id="taxiFooter"></section>
+
+
+
+
+
+
+ <!-- Jquery Js -->
+<script src="./js/jquery.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/header_footer.js"></script>
+
+    
+
+    <script>
+        $(document).ready(function() {
+           // Load header
+           $("#mainHeader").load("header.html", function() {
+               // Check the current URL
+               var currentUrl = window.location.pathname.split("/").pop();
+       
+               // Set the active class based on the current URL
+               $(".menu-items li a").each(function() {
+                   // Remove the active class from all links
+                   $(this).removeClass("nav__active");
+       
+                   // Add the active class to the current link
+                   if ($(this).attr("href") === currentUrl) {
+                       $(this).addClass("nav__active");
+                   }
+               });
+           });
+       });
+       
+       
+       </script>
+          
+        
+        
+        
+        <script>
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > 50) { // If scrolled more than 50px
+                  $('.main__navbar').addClass('navScrolled'); // Add shadow class
+              } else {
+                  $('.main__navbar').removeClass('navScrolled'); // Remove shadow class
+              }
+          });
+          </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | BookMySavaari </title>
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+     <!-- fontawesome js  -->
+     <script src="https://kit.fontawesome.com/01fbaf3a8e.js" crossorigin="anonymous"></script>
+ 
+     <link rel="stylesheet" href="./css/font.css" />
+ 
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/common.css" />
+      <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body>
+    <!-- sub header -->
+    <header class="sub__header" id="subHeader"></header>
+    <!-- main header -->
+    <div class="main__header top__nav" id="mainHeader"></div>
+
+    <!-- full banner  -->
+
+     <!-- Full-Height Banner -->
+  <section class="banner d-flex align-items-center justify-content-center ">
+    <div class="overlay"></div>
+    <div class="banner-content">
+        <h1>Why Booking a Taxi on WhatsApp is the New Cool!</h1>
+    </div>
+    
+  </section>
+
+  <!-- Blog Content -->
+  <section class="container blog-section pt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blog-post">
+          <!-- <img src="whatsapp-booking.jpg" alt="WhatsApp Taxi Booking" class="blog-img"> -->
+
+          <h2>1. Instant Booking – It's That Simple!</h2>
+          <p class="blog-content">
+            Forget complicated apps! With <strong>BookMySavari</strong>, you can book your ride in seconds by sending a quick message on WhatsApp. No app installation, no learning curve—just <span class="highlight">instant bookings</span> at your fingertips!
+          </p>
+
+          <h2>2. Real-Time Communication</h2>
+          <p class="blog-content">
+            Want to ask the driver about the Estimated Time of Arrival or change the pickup spot? Simply <span class="highlight">chat with the driver in real-time</span> on WhatsApp, just like texting a friend. It’s that easy!
+          </p>
+
+          <h2>3. No Extra App Space Needed</h2>
+          <p class="blog-content">
+            With WhatsApp being one of the most popular apps in the world, you’re already using it! So, why download yet another taxi app when you can use WhatsApp to book your rides seamlessly?
+          </p>
+
+          <h2>4. Personalized Service at Your Fingertips</h2>
+          <p class="blog-content">
+            At <strong>BookMySavari</strong>, we believe in <span class="highlight">personalized service</span>. Booking a ride with us is like chatting with a friend who’s got your back, ready to pick you up and drop you off safely.
+          </p>
+
+          <h2>5. Quick Confirmations</h2>
+          <p class="blog-content">
+            No more waiting around! You’ll get <span class="highlight">instant confirmations</span> with all the ride details and estimated fare within minutes of messaging us. Booking a taxi has never been this cool!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Happy Customers Section -->
+<!-- Customer Gallery Section -->
+<section class="customer-gallery py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Happy Customers</h2>
+      <div class="row">
+        <!-- First row with two columns (one large and one small) -->
+        <div class="col-md-8 mb-4">
+          <img src="./images/business.webp" alt="Happy Customer" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="./images/dailyoffice.webp" alt="Happy Customer" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Second row with three smaller images -->
+        <div class="col-md-4 mb-4">
+          <img src="./images/relax.webp" alt="Happy Customer" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="./images/wedding.webp" alt="Happy Customer" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="./images/airport.webp" alt="Happy Customer" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- Third row with two larger images -->
+        <div class="col-md-6 mb-4">
+          <img src="./images/chennai-central.webp" alt="Happy Customer" class="img-fluid w-100" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="./images/isha-coimbatore.webp" alt="Happy Customer" class="img-fluid w-100" style="height: 300px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+     <!-- footer -->
+     <section class="taxi__footer__sec" id="taxiFooter"></section>
+
+
+
+
+
+
+       <!-- Jquery Js -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/header_footer.js"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+           // Load header
+           $("#mainHeader").load("header.html", function() {
+               // Check the current URL
+               var currentUrl = window.location.pathname.split("/").pop();
+       
+               // Set the active class based on the current URL
+               $(".menu-items li a").each(function() {
+                   // Remove the active class from all links
+                   $(this).removeClass("nav__active");
+       
+                   // Add the active class to the current link
+                   if ($(this).attr("href") === currentUrl) {
+                       $(this).addClass("nav__active");
+                   }
+               });
+           });
+       });
+       
+       
+       </script>
+          
+        
+        <script>
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > 50) { // If scrolled more than 50px
+                  $('.main__navbar').addClass('navScrolled'); // Add shadow class
+              } else {
+                  $('.main__navbar').removeClass('navScrolled'); // Remove shadow class
+              }
+          });
+          </script>
+    
+</body>
+</html>

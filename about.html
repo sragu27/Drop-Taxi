@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontawesome js  -->
+    <script src="https://kit.fontawesome.com/01fbaf3a8e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/font.css" />
+
+     <!-- custom css -->
+     <link rel="stylesheet" href="./css/common.css" />
+     <link rel="stylesheet" href="./css/about.css">
+
+</head>
+<body>
+        <!-- sub header -->
+        <header class="sub__header" id="subHeader"></header>
+          <!-- main header -->
+          <div class="main__header top__nav" id="mainHeader"></div>
+
+    <!-- boady -->
+    <section class="banner d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="banner-content">
+                        <h1 class="display-4">Welcome to BookMySavaari</h1>
+                        <p class="lead">Your reliable taxi service for one-way trips across major cities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Introduction Section -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="py-3">Welcome to BookMySavaari</h2>
+        <p>Your trusted local taxi booking service! We believe in offering quick, reliable, and budget-friendly rides to our customers. With our easy-to-use WhatsApp booking system, getting around has never been easier.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Statement -->
+  <section class="container py-5 bg-light">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="mb-3">Our Mission</h2>
+        <p>Our mission is to provide convenient and affordable taxi services, ensuring a comfortable and safe journey for every passenger.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container py-5">
+    <div class="row text-center r-gap">
+      <div class="col-md-4">
+        <!-- <i class="fa fa-car fa-3x mb-3"></i> -->
+        <i class="fa fa-car fa-3x mb-3 ic-color"></i>
+        <h4>Local Rides</h4>
+        <p>We cover your everyday commutes around town with ease.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-plane fa-3x mb-3 ic-color"></i>
+        <h4>Airport Transfers</h4>
+        <p>Safe and reliable transfers to and from the airport.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-briefcase fa-3x mb-3 ic-color"></i>
+        <h4>Office Commutes</h4>
+        <p>Make your daily office travel hassle-free with our service.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="container py-5 bg-light">
+    <div class="row text-center r-gap">
+      <div class="col-md-12 mb-4">
+        <h2>Why Choose Us?</h2>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-clock fa-3x mb-3 ic-color"></i>
+        <h4>Reliable</h4>
+        <p>Always on time, every time.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-dollar-sign fa-3x mb-3 ic-color"></i>
+        <h4>Transparent Pricing</h4>
+        <p>No hidden fees, just clear and honest pricing.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-thumbs-up fa-3x mb-3 ic-color"></i>
+        <h4>Quality Service</h4>
+        <p>Enjoy clean, comfortable rides with professional drivers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container py-5 Contact">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong><a class="contact-tel" href="tel:+919940708777">+91 9940708777</a></p>
+        <p><strong>Email:</strong> <a class="contact-tel" href="mailto:Bookmysavaaribms@gmail.com">Bookmysavaaribms@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-5">
+    <h3>Ready to book a ride?</h3>
+    <p class="mt-3">Just message us on WhatsApp and we’ll handle the rest!</p>
+    <a href="booknow-page.html" class="btn btn__booknow mt-4">Book Now</a>
+  </section>
+    
+
+
+
+     <!-- footer -->
+     <section class="taxi__footer__sec" id="taxiFooter"></section>
+
+
+     <!-- Jquery Js -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/header_footer.js"></script>
+
+<script>
+ $(document).ready(function() {
+    // Load header
+    $("#mainHeader").load("header.html", function() {
+        // Check the current URL
+        var currentUrl = window.location.pathname.split("/").pop();
+
+        // Set the active class based on the current URL
+        $(".menu-items li a").each(function() {
+            // Remove the active class from all links
+            $(this).removeClass("nav__active");
+
+            // Add the active class to the current link
+            if ($(this).attr("href") === currentUrl) {
+                $(this).addClass("nav__active");
+            }
+        });
+    });
+});
+
+
+</script>
+   
+ 
+ 
+ 
+ <script>
+   $(window).scroll(function() {
+       if ($(this).scrollTop() > 50) { // If scrolled more than 50px
+           $('.main__navbar').addClass('navScrolled'); // Add shadow class
+       } else {
+           $('.main__navbar').removeClass('navScrolled'); // Remove shadow class
+       }
+   });
+   </script>
+    
+</body>
+</html>

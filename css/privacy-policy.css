@@ -1,0 +1,60 @@
+.privacy-wrapper {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .privacy-heading h2 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem; /* Adjusted for mobile */
+    text-transform: uppercase; /* Convert title to uppercase */
+  }
+
+  h4 {
+    font-family: var(--semibold);
+    margin-top: 20px;
+    color:  var(--marine);
+    font-size: 1.2rem; /* Adjusted for mobile */
+  }
+
+  p {
+    font-family: var(--regular);
+    color: #555;
+    line-height: 1.7;
+    font-size: 1rem; /* Suitable for mobile */
+  }
+
+  /* Padding adjustments for mobile screens */
+  @media (max-width: 768px) {
+    .privacy-wrapper {
+      padding: 15px;
+    }
+    .privacy-heading h2 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  /* Extra small screens (phones in portrait mode) */
+  @media (max-width: 576px) {
+    .privacy-wrapper {
+      padding: 10px;
+    }
+    .privacy-heading h2 {
+      font-size: 1.4rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }

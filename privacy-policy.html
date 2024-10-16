@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BookMySavaari</title>
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+     <!-- fontawesome js  -->
+     <script src="https://kit.fontawesome.com/01fbaf3a8e.js" crossorigin="anonymous"></script>
+ 
+     <link rel="stylesheet" href="./css/font.css" />
+ 
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/common.css" />
+      <link rel="stylesheet" href="./css/privacy-policy.css">
+</head>
+<body>
+
+     <!-- sub header -->
+     <header class="sub__header" id="subHeader"></header>
+     <!-- main header -->
+     <div class="main__header top__nav" id="mainHeader"></div>
+
+    <section class="privacy-wrapper py-5 mt-5">
+        <div class="container">
+            <!-- Privacy Heading -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="privacy-heading">
+                      <h2>Privacy Policy</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Privacy Content -->
+            <div class="row">
+                <div class="col-12">
+                    <p>Privacy matters to BookMySavaari (the company, we, us).
+                         This privacy policy describes the policies and procedures on the collection, use, disclosure,
+                          and protection of your information when you use our website.
+                           The terms "you" and "your" refer to the users of the BookMySavaari platform.
+                            Please read this policy before using our platform or submitting any personal information to BookMySavaari.
+                             If you have any questions, please contact us through the email address provided on our website or
+                              our mobile number.</p>
+    
+                    <h4>What Information Do We Collect?</h4>
+                    <p><strong>Information You Provide to Us:</strong> We may ask for personal
+                         information like your name, gender, email address, mobile number,
+                          and location. This information is used only for booking purposes
+                           and will not be shared with any third parties. We do not ask for
+                            credit or debit card details, photographs, OTP, passwords, or any electronic signatures.</p>
+    
+                    <h4>Lost Property</h4>
+                    <p>As part of the booking services, BookMySavaari will make reasonable efforts to assist passengers
+                         with lost property inquiries related to a given booking. 
+                         If any lost property is returned to the BookMySavaari office, 
+                         we will hold such items for a period of 6 months.
+                          To collect any lost property, you must visit our office and identify yourself as the owner of the item.
+                           Users understand and agree that BookMySavaari
+                            acts only as a platform and is not responsible for any thefts or losses during a ride.
+                             Customers are fully responsible for their goods and valuables.
+                              Please be careful with your luggage and valuables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- footer -->
+ <section class="taxi__footer__sec" id="taxiFooter"></section>
+
+
+
+
+
+
+ <!-- Jquery Js -->
+<script src="./js/jquery.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/header_footer.js"></script>
+
+    
+
+    <script>
+        $(document).ready(function() {
+           // Load header
+           $("#mainHeader").load("header.html", function() {
+               // Check the current URL
+               var currentUrl = window.location.pathname.split("/").pop();
+       
+               // Set the active class based on the current URL
+               $(".menu-items li a").each(function() {
+                   // Remove the active class from all links
+                   $(this).removeClass("nav__active");
+       
+                   // Add the active class to the current link
+                   if ($(this).attr("href") === currentUrl) {
+                       $(this).addClass("nav__active");
+                   }
+               });
+           });
+       });
+       
+       
+       </script>
+          
+        
+        
+        
+        <script>
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > 50) { // If scrolled more than 50px
+                  $('.main__navbar').addClass('navScrolled'); // Add shadow class
+              } else {
+                  $('.main__navbar').removeClass('navScrolled'); // Remove shadow class
+              }
+          });
+          </script>
+    
+</body>
+</html>
